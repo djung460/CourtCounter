@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
                 team_a_score += 2;
                 break;
             case (R.id.a_point_1):
-                team_a_score += 1;;
+                team_a_score += 1;
+                ;
                 break;
             case (R.id.b_point_3):
                 team_b_score += 3;
