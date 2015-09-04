@@ -3,7 +3,6 @@ package com.example.android.courtcounter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewDebug;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,11 +14,15 @@ public class MainActivity extends AppCompatActivity {
         // PASTE CODE YOU WANT TO TEST HERE
     }
 
-    int team_a_score = 0;
-    int team_b_score = 0;
+    private int team_a_score = 0;
+    private int team_b_score = 0;
 
-    public void addScore(View add) {
-        switch (add.getId()) {
+    public void updateScore(View button) {
+        setScore(button.getId());
+    }
+
+    private void setScore(int view_id) {
+        switch (view_id) {
             case (R.id.reset):
                 team_a_score = 0;
                 team_b_score = 0;
@@ -47,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         display();
     }
 
-    public void display() {
+    private void display() {
         TextView a_board = (TextView) findViewById(R.id.a_score);
         a_board.setText(Integer.toString(team_a_score));
         TextView b_board = (TextView) findViewById(R.id.b_score);

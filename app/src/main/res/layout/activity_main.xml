@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:background="@android:color/holo_orange_dark"
-                android:onClick="addScore"
+                android:onClick="updateScore"
                 android:text="@string/point_3" />
 
             <Button
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:background="@android:color/holo_orange_dark"
-                android:onClick="addScore"
+                android:onClick="updateScore"
                 android:text="@string/point_2" />
 
             <Button
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:background="@android:color/holo_orange_dark"
-                android:onClick="addScore"
+                android:onClick="updateScore"
                 android:text="@string/point_1" />
 
         </LinearLayout>
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:background="@android:color/holo_orange_dark"
-                android:onClick="addScore"
+                android:onClick="updateScore"
                 android:text="@string/point_3" />
 
             <Button
@@ -107,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:background="@android:color/holo_orange_dark"
-                android:onClick="addScore"
+                android:onClick="updateScore"
                 android:text="@string/point_2" />
 
             <Button
@@ -116,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:background="@android:color/holo_orange_dark"
-                android:onClick="addScore"
+                android:onClick="updateScore"
                 android:text="@string/point_1" />
         </LinearLayout>
     </LinearLayout>
@@ -129,7 +129,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="16dp"
         android:background="@android:color/holo_orange_dark"
-        android:onClick="addScore"
+        android:onClick="updateScore"
         android:text="@string/reset" />
 
 </RelativeLayout>
